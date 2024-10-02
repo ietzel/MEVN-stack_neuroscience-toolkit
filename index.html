@@ -1,66 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Left-Mid-Right Brain Vizualizer</title>
-  </head>
-  <body>
-        <p>
-            Red<input type="range" min="0" max="255" value="128" class="slider" id="r1">
-            Green<input type="range" min="0" max="255" value="128" class="slider" id="r2">
-            Blue<input type="range" min="0" max="255" value="128" class="slider" id="r3">
-        </p>
-        <p>
-            Roll<input type="range" min="0" max="3" value="0" class="slider" id="r4">
-            Pitch<input type="range" min="0" max="3" value="0" class="slider" id="r5">
-            Yaw<input type="range" min="0" max="3" value="0" class="slider" id="r6">
-        </p>    
-        <p>
-            Radius<input type="range" min="0" max="30" value="15" class="slider" id="r7">
-            W-Segments<input type="range" min="0" max="30" value="6" class="slider" id="r8">
-            H-Segments<input type="range" min="0" max="30" value="9" class="slider" id="r9">
-        </p>
-        <p>
-            Phi Start<input type="range" min="0" max="3" value="0" class="slider" id="r10">
-            Phi Length<input type="range" min="0" max="3" value="2" class="slider" id="r11">
-        </p>
-        <p>
-            Theta Start<input type="range" min="0" max="3" value="0" class="slider" id="r12">
-            Theta Length<input type="range" min="0" max="3" value="1" class="slider" id="r13">
-        </p>
-        <p>This may roughly represent potential averages of brain activity, as it may be assumed to output to input from the environment (as modified by the user sliders).</p>
-        <div id="webgl-container"></div>
-        <script src="three.js"></script>
-        <script src="Spheroid.js"></script>
-        <table>
-          <tr>
-            <th>Branches of Science</th>
-            <th>Types of Philosophy</th>
-            <th>Genres of Art</th>
-          </tr>
-          <tr>
-            <th>Physics</th>
-            <th>Logic</th>
-            <th>Progressive concepts (abstraction)</th>
-          </tr>
-          <tr>
-            <th>Chemistry</th>
-            <th>Aesthetics</th>
-            <th>Portraiture</th>
-          </tr>
-          <tr>
-            <th>Biology</th>
-            <th>Axiology</th>
-            <th>Religion/Historical</th>
-          </tr>
-          <tr>
-            <th>Earth Science</th>
-            <th>Epistemology</th>
-            <th>Still Life</th>
-          </tr>
-          <tr>
-            <th>Astronomy</th>
-            <th>Metaphysics</th>
-            <th>Landscape</th>
-          </tr>
-        </table>
-  </body>
+    <head>
+        <title>Left-Mid-Right-Brain Visualizer</title>
+        <script src="p5.js"></script>
+        <style> 
+            body {
+                padding: 3; 
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Sphere radius, width segments, height segments, ambient light, directional light, point light</h2>
+        <script src="sphere.js"></script>
+    </body>
+</html>
